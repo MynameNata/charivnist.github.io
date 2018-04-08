@@ -1,0 +1,112 @@
+DEVELOPMENT TERMS
+Requirements Validation
+1. Check project requirements and set timeline plan for final delivery.
+2. Check project requirements and make sure everything is clear:
+I. Framework type / pure code
+II. Browsers support (Default - IE11, Edge, Chrome, Firefox & Safari) - unless was specified differently.
+III. Responsiveness - Desktop, Tablet (Horizon / Vertical) & Mobile (Horizon / Vertical).
+IV. Font size - PX / EM - according to project needs - link.
+3. Target CMS compatibility (.Net, PHP, Sharepoint, Magento, Prestashop, Wordpress, Ghost and more)
+4. Special requirements or tasks must be noted properly by developer.
+5. PSD design is the project guideline and main foundation of the work style.
+6. Responsive testing - work with Google Chrome > Inspect Element > Choose > Select layout.
+General Requirements
+1. Front end - HTML5 and CSS3 are main technology of the UI code (CSS3 can replace JS in many cases)
+2. Pixel-Perfect level of UI - must be accurate on pixel level to PSD design.
+3. Cannot be any copyright mark, link, name, signature, email, images in any of the code files, files names,
+project images and any other project asset.
+4. Developer cannot use any modules and plugins which are not free to use & with free license of use.
+5. Resolutions ready - link - need to include all desktops, including large screens and resolutions.
+6. File names need to be clear and logic. Back-end files and folders organization - Images, CSS, JS, Fonts,
+and any other project asset - required to be in dedicated folders.
+7. Code - classes, ID’s and scripts names - required to be named properly - for future editing.
+8. Clean, robust, dynamic & organized code are essentials!
+9. 1 element for all layouts - Header, Footer, Body, Menu, fields & forms - cannot have duplicate elements for
+desktop and mobile - you required to do 1 elements which will fit to all layouts properly.
+10. Sliders with layers & float text required to fit for any responsive layout.
+11. Use hover effects, animations and fields validations (e.g. emails, ID, names, phones, etc..) where possible,
+keep in mind that sometimes the designers forget to create them.
+12. SEO - Project UI required to be optimize for search engines, create accordingly the layout structure, main
+tags, elements positions, etc.
+13. Google Page speed tool - page need to get green ranking - link
+14. If the project is creation of eBay templates (store & products) - freelancer must follow the requirements
+according to eBay guidelines - link (check the guide & inner links, it covers all requirements) 
+
+ PROJECT TERMS 3 of 9
+Code Requirements - HTML5
+1. PLEASE WORK WITH THIS REFERENCES - http://devdocs.io/
+2. HTML Tags - link - use tags smartly - e.g. ‘strong’ instead of ‘bold’, etc.
+3. H1 tag can be use only once in each page, not more than that.
+4. Text elements required to be flexible - if we change the length of a word to bigger word (reasonable size),
+the spacing need to remain the same and the section should not break into 2 rows - e.g. border should
+not be effected, etc.
+5. In cases of tables - using ul / li should be per rows and not columns (easier for implementation process).
+6. Remove old codes that has no use in the project.
+Code Requirements - CSS3
+1. PLEASE WORK WITH THIS REFERENCES - http://cssreference.io & http://devdocs.io/
+2. The CSS required to be pure (don’t use SCSS or similar CSS frameworks) & cannot use images(!)
+3. Style.css file should be one file that has all the project CSS code, please avoid splitting the CSS code into
+several CSS files.
+4. In the CSS file - create in header a “table of content” and divide with numbers the code into sections & add
+description what the section is about - for future editing.
+5. In the CSS file - divide the code into sections of responsiveness - desktop / tablet and mobile.
+6. RTL / LTR appears only in CSS, not in HTML code! do not use dir=“rtl” / dir=“ltr” / align=“left” /
+align=“right” in HTML code - Everything need to be in CSS ONLY! - this is for dynamic language change.
+7. Do not use classes names that contain: right/left/ltr/rtl - class name cannot contain any of those words.
+8. Create clear names that inform what the CSS class is about, meaning from the class name a person can
+understand what it suppose to do.
+9. Do not use square settings like padding / margin 0px 0px 10px 2px, instead split to rows that each has
+unique line like margin-left, margin-right, etc..
+10. Do not use general CSS settings, for example if the menu is written as ul/li you need to create settings in
+its own devision like ul.menu_top and not general settings for ul.
+11. Remove old codes that has no use in the project.
+
+PROJECT TERMS 4 of 9
+Code Requirements - JS and general scripting
+1. PLEASE WORK WITH THIS REFERENCES - http://devdocs.io/
+2. DO NOT USE JS SCRIPT IN THE HTML FILES - separate JS scripts that are locate in a specific page with
+outsource script file that located in JS folder.
+3. Dropdown and general scripts need to work well in all responsive layouts.
+4. Remove old codes that has no use in the project.
+Forms, Calendars &Translations
+1. Pay attention for RTL language, alignment is not enough - Example == elpmaxE - the order of letters need
+also to be handled properly. This also relevant for numbers and characters.
+2. Form Name fields need to contain only letters (English a-z OR Hebrew ?-?.(
+3. Form Number fields (Phones, ID, Credit cards, etc) need to contain only numbers.
+4. Form Email field - contain only email template - name@domain.xyz , with exception to “ - . _ “ letters
+5. The forms need to have validations - in case something was written wrong - this should be notified.
+6. Validations appears in red text under the relevant field (not inside and not at bottom of the section).
+ PROJECT TERMS 5 of 9
+Code Requirements - Accessibility
+1. The accessibility standard is AA level in every project - link,
+2. Project must be checked with - tools - each page needs to be checked separately. You need to check
+with more than one tool, for fully confirmation the project is properly accessible.
+3. H tags hierarchy - H3 can only be after H2 and not after H1.
+4. Forms - required to be cover with <FIGURE> tag and with <FIGCAPTION> tag for description.
+5. Forms - Label tags required to be handled according to W3C standards (see link above).
+6. Forms - in case of ‘Required fields’ - you need to add the require attribute into the input.
+7. Accessibility - Forms - Example:
+< FIGURE >
+                < FORM >
+               <FIGCAPTION >add phone number</FIGCAPTION >
+               <LABEL for=“prefix">add prefix number:/LABEL>
+ <INPUT type="text" id="prefix">
+               <LABEL for=“phone_number">add number:</LABEL>
+ <INPUT type="tel" id="phone_number">
+                </ FORM >
+</ FIGURE >
+8. Images - required to add <alt> tags.
+9. Tables - in case there is a summary in the table - you required to add summary attribute into the table tag
+and also add <caption> tag.
+10. Tables - for columns titles use ‘th’ instead of ‘td’
+11. Time - you need to add <time> tag with time attribute according to the time in the content, e.g:
+<time datetime=“25/06/2017”>2017, June 25th</time>
+12. Links - add links with title attribute.
+13. Links - Avoid links that direct to the same place, in case you must than use attribute ‘data-href’
+14. Links - avoid wrapping elements (ul, li, p, div, …) with <a> tag, you can wrap using ‘span’, ‘img’, etc..
+Accessibility - Links - Example:
+<div data-href=“www.domain.com/article.php”>
+<h3>Article title</h3>
+<p>Article text</p>
+<a href="www.domain.com/article.php" title=“article title”>click here to enter the the title</a>
+ </div> 
